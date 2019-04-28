@@ -28,7 +28,7 @@ end
   end
 
   def self.students_below_12th_grade
-    sql = "SELECT * FROM students WHERE grade = 11 OR < 11"
+    sql = "SELECT * FROM students WHERE grade = 11"
     DB[:conn].execute(sql)
   end
 
